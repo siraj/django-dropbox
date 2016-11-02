@@ -1,8 +1,8 @@
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from dropbox import rest, session
 from django_dropbox.settings import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TYPE
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
 
     def handle_noargs(self, *args, **options):
         sess = session.DropboxSession(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TYPE)
