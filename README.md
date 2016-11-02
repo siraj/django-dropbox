@@ -1,5 +1,5 @@
 # django-dropbox
-> Version 0.0.1
+> Version 0.0.3
 
 # What
 
@@ -9,7 +9,7 @@ django-dropbox is a Django App that contains a Django Storage which uses Dropbox
 
 ## First of all
 
-    pip install django-dropbox
+    pip install git+https://github.com/siraj/django-dropbox.git
 
 ## Add it to your Django Project
 
