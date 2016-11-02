@@ -4,7 +4,7 @@ from django_dropbox.settings import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TYPE
 
 class Command(BaseCommand):
 
-    def handle_noargs(self, *args, **options):
+    def handle(self, *args, **options):
         sess = session.DropboxSession(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TYPE)
         request_token = sess.obtain_request_token()
 
